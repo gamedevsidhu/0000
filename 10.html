@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Example</title>
+    <script>
+        function startTimer() {
+            // Set the time delay in milliseconds (e.g., 5000 for 5 seconds)
+            const timeDelay = 15000;
+
+            // Disable the button to prevent multiple clicks
+            document.getElementById('startButton').disabled = true;
+
+            // Start the timer
+            setTimeout(function() {
+                // Enable the button after the timer completes
+                document.getElementById('startButton').disabled = false;
+
+                // Display the link (replace 'your-link-here' with the actual link)
+                document.getElementById('result').innerHTML = '#MuhammadSallahoAlaiheWassalam!';
+            }, timeDelay);
+        }
+    </script>
+</head>
+<body>
+
+    <center><button id="startButton" onclick="startTimer()">Click here to get the code!</button>
+
+    <div id="result"></div>
+</center>
+</body>
+</html>
